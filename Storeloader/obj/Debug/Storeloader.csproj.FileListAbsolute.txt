@@ -1,0 +1,9 @@
+C:\dev\OneDrive\Development\StoreOfficeTest\StoreOfficeTest\bin\Debug\Storeloader.exe.config
+C:\dev\OneDrive\Development\DemoStore\Storeloader\bin\Debug\Storeloader.exe.config
+C:\dev\OneDrive\Development\DemoStore\Storeloader\bin\Debug\Storeloader.exe
+C:\dev\OneDrive\Development\DemoStore\Storeloader\bin\Debug\Storeloader.pdb
+C:\dev\OneDrive\Development\DemoStore\Storeloader\obj\Debug\Storeloader.exe
+C:\dev\OneDrive\Development\DemoStore\Storeloader\obj\Debug\Storeloader.pdb
+C:\Users\Oscar\OneDrive\Development\StoreOffice\Storeloader\bin\Debug\Storeloader.exe.config
+C:\Users\Oscar\OneDrive\Development\StoreOffice\Storeloader\obj\Debug\Storeloader.exe
+C:\Users\Oscar\OneDrive\Development\StoreOffice\Storeloader\obj\Debug\Storeloader.pdb

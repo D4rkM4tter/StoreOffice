@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2013 rel. 2 sp2 (x64) (http://www.altova.com) by Paco Pantele (Tele2 Sverige AB) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.ica.se/StoreCatalog/ATG/v01" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="ArticleInfo">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ArticleDetails" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="GTIN" type="xs:decimal" minOccurs="1" maxOccurs="1">
+								<xs:annotation>
+									<xs:documentation>Global Trade Item Number </xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="RemovedArticleFlag" type="xs:boolean" minOccurs="0" maxOccurs="1">
+								<xs:annotation>
+									<xs:documentation>Indicating that the GTIN is removed from the inventory.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="ConnectGTIN" minOccurs="0" maxOccurs="1">
+								<xs:annotation>
+									<xs:documentation>Specific supplier Buying Item Number (BU GTIN)</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="GTIN" type="xs:decimal" maxOccurs="unbounded"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="OnLineShoppingFlag" type="xs:boolean" minOccurs="0" maxOccurs="1">
+								<xs:annotation>
+									<xs:documentation>Indicating that the GTIN is sellable online.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="Classification" minOccurs="1" maxOccurs="1">
+								<xs:annotation>
+									<xs:documentation>Classification..</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Department" minOccurs="0" maxOccurs="1">
+											<xs:annotation>
+												<xs:documentation>Designates the product category or Ica internal brand.</xs:documentation>
+											</xs:annotation>
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="Number" type="xs:int" minOccurs="0" maxOccurs="1">
+														<xs:annotation>
+															<xs:documentation>Store specific identifier for the actual department.</xs:documentation>
+														</xs:annotation>
+													</xs:element>
+													<xs:element name="Name" type="xs:string" minOccurs="0" maxOccurs="1">
+														<xs:annotation>
+															<xs:documentation>Common name for the department.</xs:documentation>
+														</xs:annotation>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="CostPrice" minOccurs="1" maxOccurs="1">
+								<xs:annotation>
+									<xs:documentation>Purchase price from the supplier.</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="CurrentOrdinaryCostPrice" type="xs:decimal" minOccurs="0" maxOccurs="1"/>
+										<xs:element name="PromotionCostPrice" type="xs:decimal" minOccurs="0" maxOccurs="1"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="Price" minOccurs="1" maxOccurs="1">
+								<xs:annotation>
+									<xs:documentation>Retail price towards end customer</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="CurrentOrdinaryPrice" type="xs:decimal" minOccurs="1" maxOccurs="1"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="LabelInfo" minOccurs="1" maxOccurs="1">
+								<xs:annotation>
+									<xs:documentation>Article item description properties</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="CountryOfOrigin" type="xs:int" minOccurs="0" maxOccurs="1">
+											<xs:annotation>
+												<xs:documentation>Country of origin..</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="Type" use="required">
+				<xs:annotation>
+					<xs:documentation>Type of file:
+- Total
+- Dagslut
+- Manuell
+</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="Total"/>
+						<xs:enumeration value="Dagslut"/>
+						<xs:enumeration value="Manuell"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

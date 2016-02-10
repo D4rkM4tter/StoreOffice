@@ -1,0 +1,7 @@
+C:\dev\OneDrive\Development\StoreOfficeTest\StoreOfficeTest\bin\Debug\csv\demo_store.csv
+C:\dev\OneDrive\Development\StoreOfficeTest\StoreOfficeTest\bin\Debug\Storeload.exe.config
+C:\dev\OneDrive\Development\StoreOfficeTest\StoreOfficeTest\bin\Debug\Storeload.exe
+C:\dev\OneDrive\Development\StoreOfficeTest\StoreOfficeTest\bin\Debug\Storeload.pdb
+C:\dev\OneDrive\Development\StoreOfficeTest\StoreOfficeTest\obj\Debug\Storeload.csprojResolveAssemblyReference.cache
+C:\dev\OneDrive\Development\StoreOfficeTest\StoreOfficeTest\obj\Debug\Storeload.exe
+C:\dev\OneDrive\Development\StoreOfficeTest\StoreOfficeTest\obj\Debug\Storeload.pdb

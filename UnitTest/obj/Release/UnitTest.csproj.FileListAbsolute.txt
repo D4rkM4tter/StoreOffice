@@ -1,0 +1,8 @@
+C:\dev\OneDrive\Development\DemoStore\UnitTest\bin\Release\data\ReadTest.csv
+C:\dev\OneDrive\Development\DemoStore\UnitTest\bin\Release\UnitTest.dll
+C:\dev\OneDrive\Development\DemoStore\UnitTest\bin\Release\UnitTest.pdb
+C:\dev\OneDrive\Development\DemoStore\UnitTest\bin\Release\Storeloader.exe
+C:\dev\OneDrive\Development\DemoStore\UnitTest\bin\Release\Storeloader.pdb
+C:\dev\OneDrive\Development\DemoStore\UnitTest\obj\Release\UnitTest.csprojResolveAssemblyReference.cache
+C:\dev\OneDrive\Development\DemoStore\UnitTest\obj\Release\UnitTest.dll
+C:\dev\OneDrive\Development\DemoStore\UnitTest\obj\Release\UnitTest.pdb

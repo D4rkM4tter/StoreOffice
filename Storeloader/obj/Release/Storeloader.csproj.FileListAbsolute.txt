@@ -1,0 +1,5 @@
+C:\dev\OneDrive\Development\DemoStore\Storeloader\bin\Release\Storeloader.exe.config
+C:\dev\OneDrive\Development\DemoStore\Storeloader\bin\Release\Storeloader.exe
+C:\dev\OneDrive\Development\DemoStore\Storeloader\bin\Release\Storeloader.pdb
+C:\dev\OneDrive\Development\DemoStore\Storeloader\obj\Release\Storeloader.exe
+C:\dev\OneDrive\Development\DemoStore\Storeloader\obj\Release\Storeloader.pdb

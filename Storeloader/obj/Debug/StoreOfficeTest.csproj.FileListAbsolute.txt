@@ -1,0 +1,15 @@
+C:\Users\Oscar\OneDrive\Development\StoreOfficeTest\StoreOfficeTest\bin\Debug\StoreOfficeTest.exe.config
+C:\Users\Oscar\OneDrive\Development\StoreOfficeTest\StoreOfficeTest\bin\Debug\StoreOfficeTest.exe
+C:\Users\Oscar\OneDrive\Development\StoreOfficeTest\StoreOfficeTest\bin\Debug\StoreOfficeTest.pdb
+C:\Users\Oscar\OneDrive\Development\StoreOfficeTest\StoreOfficeTest\obj\Debug\StoreOfficeTest.exe
+C:\Users\Oscar\OneDrive\Development\StoreOfficeTest\StoreOfficeTest\obj\Debug\StoreOfficeTest.pdb
+C:\Users\Oscar\OneDrive\Development\StoreOfficeTest\StoreOfficeTest\bin\Debug\csv\demo_store.csv
+C:\dev\OneDrive\Development\StoreOfficeTest\StoreOfficeTest\bin\Debug\csv\demo_store.csv
+C:\dev\OneDrive\Development\StoreOfficeTest\StoreOfficeTest\bin\Debug\StoreOfficeTest.exe.config
+C:\dev\OneDrive\Development\StoreOfficeTest\StoreOfficeTest\bin\Debug\StoreOfficeTest.exe
+C:\dev\OneDrive\Development\StoreOfficeTest\StoreOfficeTest\bin\Debug\StoreOfficeTest.pdb
+C:\dev\OneDrive\Development\StoreOfficeTest\StoreOfficeTest\obj\Debug\StoreOfficeTest.exe
+C:\dev\OneDrive\Development\StoreOfficeTest\StoreOfficeTest\obj\Debug\StoreOfficeTest.pdb
+C:\Users\Oscar\OneDrive\Development\StoreOfficeTest\StoreOfficeTest\obj\Debug\StoreOfficeTest.csprojResolveAssemblyReference.cache
+C:\dev\OneDrive\Development\StoreOfficeTest\StoreOfficeTest\obj\Debug\StoreOfficeTest.csprojResolveAssemblyReference.cache
+C:\dev\OneDrive\Development\StoreOfficeTest\StoreOfficeTest\bin\Debug\Storeload.exe.config
