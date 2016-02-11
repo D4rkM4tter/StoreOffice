@@ -1,67 +1,53 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 //using StoreOffice.Nathandel;
 using StoreOffice.ATG;
 using StoreOffice.csv;
-using System.Reflection;
-
+using StoreOffice.Util;
+using CommandLine;
+//using CommandLine.Text;
 
 namespace StoreOffice
 {
     public class Program
     {
         public static List<StoreItem> items = new List<StoreItem>();
-        public static string inputFileName = "";
-        public static string outputFileName = "output.xml";
         static void Main(string[] args)
         {
+            ArgumentOptions options = new ArgumentOptions();
+            Parser parser = new Parser((new ParserSettings {IgnoreUnknownArguments = false, CaseSensitive = false, HelpWriter = Console.Error }));
+            var result = parser.ParseArguments(args, options);
+
+            if (options.Help || args.Length == 0)
+            {
+                Console.Error.Write(options.GetUsage());
+            }
+
             try
             {
-                if(args == null || args.Length == 0)
-                {
-                    Console.WriteLine("ICA Online Store Office Xml generator utility version 0.1.");
-                    Console.WriteLine("Warning : No arguments specified.");
-                    Console.WriteLine();
-                    Console.WriteLine("/in - Input file (csv) that contains orginal data must be specified.");
-                    Console.WriteLine();
-                    Console.WriteLine("/out - Output file could be specified. If not provided default output.xml will be used.");
-                    Console.WriteLine();
-                    Console.WriteLine("Exampel 1: /in data.csv");
-                    Console.WriteLine();
-                    Console.WriteLine("Exampel 2: /in data.csv /out Rilles_store.xml");
-                }
-                else
-                {
-                    if(args.Length == 2)
-                    {
-                        inputFileName = args[1];
-                    }
-                    else
-                    {
-                        inputFileName = args[1];
-                        outputFileName = args[3];
-                    }
+                //@"C:\dev\OneDrive\Development\DemoStore\Storeloader\data\csv\demo_store.csv"
 
-                    //@"C:\dev\OneDrive\Development\DemoStore\Storeloader\data\csv\demo_store.csv"
-                    ReadCsvFile(inputFileName);
-                    WriteFile(outputFileName);
-                }
+                if (options.Verbose) { Console.WriteLine("Reading CSV file..."); }
+                ReadCsvFile(options.InputFile, options.Verbose);
+
+                if(options.Verbose) { Console.WriteLine("Writing Store Office Xml..."); }
+                WriteFile(options.OutputFile, options.Verbose);
+                
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.ToString());
                 throw;
             }
+
+            if(options.Verbose) { Console.WriteLine("Operation completed succesfully!"); }
         }
 
         /// <summary>
         /// Read the csv file containing the GTINs and Country.
         /// </summary>
         /// <returns></returns>
-        public static List<StoreItem> ReadCsvFile(string path)
+        public static List<StoreItem> ReadCsvFile(string path, bool verbose)
         {
             using (CsvFileReader reader = new CsvFileReader(path))
             {
@@ -76,15 +62,17 @@ namespace StoreOffice
                         item.CountryCode = row[1];
 
                     items.Add(item);
+                    if (verbose) { Console.WriteLine("CSV row: {0}, {1}", item.GTIN, item.CountryCode); }
                 }
             }
 
             return items;
         }
 
-        public static void WriteFile(string filename)
+        public static void WriteFile(string filename, bool verbose)
         {
             ArticleInfo articleInfo = GetArticles();
+            if (verbose) { Console.WriteLine("{0} number of articles ready to serialize to disk.", articleInfo.ArticleDetails.Length); }
             SerializationHelper.XMLSerializeToFile(articleInfo, filename);
         }
 

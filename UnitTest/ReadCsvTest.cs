@@ -25,7 +25,7 @@ namespace UnitTest
             string path = "data/ReadTest.csv";
             int expected = 26;
 
-            Program.ReadCsvFile(path);
+            Program.ReadCsvFile(path, false);
 
             Assert.IsNotNull(Program.items);
             Assert.AreEqual(Program.items.Count, expected);

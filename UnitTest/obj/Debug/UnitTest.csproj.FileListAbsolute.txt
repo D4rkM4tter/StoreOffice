@@ -24,3 +24,13 @@ C:\dev\OneDrive\Development\DemoStore\UnitTest\bin\Debug\Storeloader.pdb
 C:\dev\OneDrive\Development\DemoStore\UnitTest\obj\Debug\UnitTest.csprojResolveAssemblyReference.cache
 C:\dev\OneDrive\Development\DemoStore\UnitTest\obj\Debug\UnitTest.dll
 C:\dev\OneDrive\Development\DemoStore\UnitTest\obj\Debug\UnitTest.pdb
+C:\Users\Oscar\OneDrive\Development\StoreOffice\UnitTest\obj\Debug\UnitTest.csprojResolveAssemblyReference.cache
+C:\Users\Oscar\OneDrive\Development\StoreOffice\UnitTest\bin\Debug\data\ReadTest.csv
+C:\Users\Oscar\OneDrive\Development\StoreOffice\UnitTest\bin\Debug\UnitTest.dll
+C:\Users\Oscar\OneDrive\Development\StoreOffice\UnitTest\bin\Debug\UnitTest.pdb
+C:\Users\Oscar\OneDrive\Development\StoreOffice\UnitTest\bin\Debug\Storeloader.exe
+C:\Users\Oscar\OneDrive\Development\StoreOffice\UnitTest\bin\Debug\CommandLine.dll
+C:\Users\Oscar\OneDrive\Development\StoreOffice\UnitTest\bin\Debug\Storeloader.pdb
+C:\Users\Oscar\OneDrive\Development\StoreOffice\UnitTest\bin\Debug\CommandLine.xml
+C:\Users\Oscar\OneDrive\Development\StoreOffice\UnitTest\obj\Debug\UnitTest.dll
+C:\Users\Oscar\OneDrive\Development\StoreOffice\UnitTest\obj\Debug\UnitTest.pdb
