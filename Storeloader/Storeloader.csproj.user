@@ -4,6 +4,6 @@
     <ProjectView>ShowAllFiles</ProjectView>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
-    <StartArguments>/in keso.csv /out rille.xml</StartArguments>
+    <StartArguments>-i C:\Users\Oscar\OneDrive\Development\StoreOffice\Storeloader\data\csv\demo_store.csv -o c:\temp\oscar.xml</StartArguments>
   </PropertyGroup>
 </Project>

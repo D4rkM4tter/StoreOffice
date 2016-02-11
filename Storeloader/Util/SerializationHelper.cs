@@ -5,7 +5,7 @@ using System.Xml;
 using System.Xml.Serialization;
 using System.IO;
 
-namespace StoreOffice
+namespace StoreOffice.Util
 {
     /// <summary>
     /// Class containing serialization functions

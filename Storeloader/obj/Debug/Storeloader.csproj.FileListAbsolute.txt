@@ -5,5 +5,9 @@ C:\dev\OneDrive\Development\DemoStore\Storeloader\bin\Debug\Storeloader.pdb
 C:\dev\OneDrive\Development\DemoStore\Storeloader\obj\Debug\Storeloader.exe
 C:\dev\OneDrive\Development\DemoStore\Storeloader\obj\Debug\Storeloader.pdb
 C:\Users\Oscar\OneDrive\Development\StoreOffice\Storeloader\bin\Debug\Storeloader.exe.config
+C:\Users\Oscar\OneDrive\Development\StoreOffice\Storeloader\bin\Debug\Storeloader.exe
+C:\Users\Oscar\OneDrive\Development\StoreOffice\Storeloader\bin\Debug\Storeloader.pdb
+C:\Users\Oscar\OneDrive\Development\StoreOffice\Storeloader\bin\Debug\CommandLine.dll
+C:\Users\Oscar\OneDrive\Development\StoreOffice\Storeloader\bin\Debug\CommandLine.xml
 C:\Users\Oscar\OneDrive\Development\StoreOffice\Storeloader\obj\Debug\Storeloader.exe
 C:\Users\Oscar\OneDrive\Development\StoreOffice\Storeloader\obj\Debug\Storeloader.pdb
